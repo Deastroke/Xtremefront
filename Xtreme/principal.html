@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar doble con servicios</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/xtreme.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="js/carrusel.js" defer></script>
+  <script src="js/form.js" defer></script>
+</head>
+<body>
+  <!-- Navbar superior -->
+  <header class="navbar-principal">
+    <nav>
+      <ul>
+        <li class="logo">
+          <a href="principal.html">
+            <img src="img/xtreme.png" alt="Logo" />
+          </a>
+        </li>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+        <li class="social-icons">
+          <a href="https://wa.me/523332456008" class="fab fa-whatsapp"></a>
+              <a href="https://wa.me/523326839859" class="fab fa-whatsapp"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Banderas en el lado derecho -->
+    <div class="flags">
+      <img src="img/Mexico.svg" alt="Bandera México" class="flag-mexico" />
+      <img src="img/Alemania.svg" alt="Bandera Alemania" class="flag-alemania" />
+    </div>
+  </header>
+
+  <!-- Navbar inferior -->
+  <div class="navbar-secundario">
+    <nav>
+      <ul>
+        <li><a href="cnc.html">CNC</a></li>
+        <li><a href="convencional.html">Convencional</a></li>
+        <li><a href="guias.html">Guías</a></li> <!-- Nueva opción -->
+        <li><a href="lamina.html">Lámina y Placa</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="carrusel">
+      <div class="slide active">
+        <img src="img/torno.jpg" alt="Imagen 1">
+        <div class="texto-slide">
+          Servicio de calidad para tu empresa
+          <br>
+          <a href="contactos.html" class="boton-slide">Contáctanos</a>
+        </div>
+      </div>      
+      <div class="slide">
+        <img src="img/inicio.webp" alt="Imagen 2">
+        <div class="texto-slide">
+          Tecnología de punta en cada detalle
+          <br>
+          <a href="contactos.html" class="boton-slide"><i class="fas fa-envelope"></i> Contáctanos</a>
+        </div>
+      </div>
+          
+      
+  </main>
+
+  <div class="cuadro-servicios">
+    <h2>Nuestros Servicios</h2>
+  </div>
+  
+
+  
+  <section class="servicios-section">
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <img src="img/revision.png" alt="Diagnóstico" class="icono-servicio">
+        <div class="info-servicio">
+          <h3>Diagnóstico de fallas eléctricas - electrónicas - mecánicas</h3>
+          <ul>
+            <li>Verificaciones geométricas de ortogonalidad y de nivelación.</li>
+            <li>Medición de vibraciones en máquinas y análisis de espectro de vibraciones.</li>
+            <li>Verificación de aislamiento y estado de servomotores y etapas de potencia.</li>
+            <li>Verificación de funcionalidad drive - servomotor - encoder.</li>
+            <li>Monitoreo y rastreo de fallas PLC.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="servicio-card">
+        <img src="img/drilling.png" alt="Traslados" class="icono-servicio">
+        <div class="info-servicio">
+          <h3>Traslados de máquinas: Desmontaje y Puestas en Marcha</h3>
+          <ul>
+            <li>Prenivelación; Nivelación fina.</li>
+            <li>Alineación en alta precisión.</li>
+            <li>Puesta en marcha y arranque.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="servicio-card">
+        <img src="img/machine.png" alt="Reconstrucción" class="icono-servicio">
+        <div class="info-servicio">
+          <h3>Reconstrucción de máquina</h3>
+          <ul>
+            <li>Reconstrucción mecánica.</li>
+            <li>Reparaciones o recambios de tornillos de bolas.</li>
+            <li>Reparaciones o recambios de guías lineales.</li>
+            <li>Reparaciones o recambios de transmisiones.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="servicio-card">
+        <img src="img/presentation.png" alt="Capacitaciones" class="icono-servicio">
+        <div class="info-servicio">
+          <h3>Capacitaciones</h3>
+          <ul>
+            <li>Operación de máquina y control CNC.</li>
+            <li>Programación.</li>
+            <li>Preparación pieza y herramentales.</li>
+            <li>Plan de mantenimiento.</li>
+            <li>Mantenimientos preventivos.</li>
+            <li>Mantenimientos correctivos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-marquee">
+        <div class="footer-scroll-content">
+          <!-- Mueve el logo aquí -->
+          <div class="footer-logo-moving">
+            <img src="img/xtreme.png" alt="Logo Xtreme">
+          </div>
+  
+          <div class="footer-item">
+            <h4><i class="fas fa-envelope"></i> Correo</h4>
+            <p>infoservicioxtreme@gmail.com</p>
+          </div>
+  
+          <div class="footer-item">
+            <h4><i class="fas fa-map-marker-alt"></i> Dirección</h4>
+            <p>Artesanos, 45598 San Pedro Tlaquepaque, Jal.</p>
+          </div>
+  
+          <div class="footer-item">
+            <h4><i class="fas fa-share-alt"></i> Síguenos</h4>
+            <div class="redes">
+              <a href="https://wa.me/523332456008" class="fab fa-whatsapp"></a>
+              <a href="https://wa.me/523326839859" class="fab fa-whatsapp"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<section class="formulario-servicio">
+  <h2>¡Solicita tu servicio!</h2>
+  <p class="subtexto">Nos interesa conocer tus necesidades<br>¡Escríbenos!</p>
+
+  <div class="formulario-cuadro">
+    <form class="formulario" action="/submit" method="POST">
+      <div class="fila">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="campo">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="pais">País</label>
+          <input type="text" id="pais" name="pais" placeholder="País" required>
+        </div>
+        <div class="campo">
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" placeholder="Estado" required>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="compania">Compañía</label>
+          <input type="text" id="compania" name="compania" placeholder="Compañía">
+        </div>
+      </div>
+
+      <!-- Descripción abajo del título y más ancho -->
+      <div class="campo descripcion">
+        <label for="descripcion">Descripción de tu solicitud</label>
+        <textarea id="descripcion" name="descripcion" placeholder="Descripción de tu solicitud" required></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="overlay">
+      <div class="footer-derecha">
+        <div class="footer-banderas">
+          <img src="img/Mexico.svg" alt="México" class="bandera">
+          <img src="img/Alemania.svg" alt="Alemania" class="bandera">
+        </div>
+        <p class="direccion-footer">Artesanos, 45598 San Pedro Tlaquepaque, Jal.</p>
+      </div>
+      
+      
+  
+      <div class="footer-content">
+        <!-- Navegación al centro -->
+        <div class="footer-lista-centro">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-cuadro-blanco">
+          <img src="img/xtreme.png" alt="Logotipo" class="logotipo-footer">
+          <p class="frase-footer">Tu confianza es nuestro compromiso</p>
+        </div>
+        
+        
+  
+        <!-- Servicios a la derecha del centro -->
+        <div class="footer-servicios">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="cnc.html">CNC</a></li>
+            <li><a href="convencional.html">Convencional</a></li>
+            <li><a href="guias.html">Guías</a></li>
+            <li><a href="lamina.html">Lámina y Placa</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+       <!-- Pie inferior -->
+       <div class="footer-bottom">
+        <p>Todos los derechos reservados &copy; Xtreme</p>
+      </div>
+
+  </footer>
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  
+
+</body>
+</html>

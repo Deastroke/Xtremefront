@@ -1,0 +1,326 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* Fondo blanco */
+}
+
+/* Navbar ajustado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 80px;  /* Altura mínima */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header .logo img {
+    height: 40px; /* Aumenta el tamaño del logo */
+    width: auto; /* Mantiene la proporción original */
+    margin-right: 10px;
+    image-rendering: -webkit-optimize-contrast; /* Mejora la calidad en algunos navegadores */
+    image-rendering: crisp-edges; /* Mejora la nitidez */
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s, border-bottom 0.3s; /* Transición suave */
+    border-bottom: 2px solid transparent; /* Línea invisible al principio */
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Cambiar color de texto */
+    border-bottom: 2px solid #00bcd4; /* Línea visible al pasar el mouse */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Ajustes para el contenido para que no quede debajo del navbar */
+body {
+    margin-top: 100px;  /* Ajusta según el tamaño de tu navbar */
+}
+
+/* Resto de tus estilos */
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px 50px 0 0;
+    margin-top: 0;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .footer-container div {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Asegura que el pie de página no tenga espacio innecesario */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto */
+    padding: 20px 10px;
+    text-align: center;
+    position: relative; /* Asegura su posición relativa */
+    border-radius: 50px 50px 0 0; /* Solo redondea las esquinas superiores */
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+/* Contenedor de pie de página */
+footer .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .footer-container div {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+footer .footer-logo img {
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 100%; /* No se deformará si la imagen tiene proporciones adecuadas */
+    width: 200px; /* Ajusta este valor según el tamaño deseado para tu logo */
+    margin-bottom: 10px;
+    margin-top: 20px; /* Mueve el logo hacia abajo */
+    display: block; /* Evita el espacio extra debajo de la imagen */
+    image-rendering: -webkit-optimize-contrast; /* Mejora la calidad en algunos navegadores */
+}
+
+/* Enlaces de pie de página */
+footer .footer-links ul,
+footer .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-links ul li,
+footer .footer-social ul li {
+    margin: 5px 0;
+}
+
+footer .footer-links ul li a,
+footer .footer-social ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .footer-links ul li a:hover,
+footer .footer-social ul li a:hover {
+    color: #00bcd4;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-container div {
+        text-align: center;
+    }
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox para alinear los elementos en fila */
+    gap: 20px; /* Espaciado entre los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.footer-social ul li {
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+
+.footer-social ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex; /* Alinea ícono y texto en fila */
+    align-items: center;
+    gap: 10px; /* Espaciado entre el ícono y el texto */
+    transition: color 0.3s;
+}
+
+.footer-social ul li a img.social-icon {
+    width: 30px; /* Tamaño del ícono */
+    height: 30px;
+    object-fit: cover; /* Asegura que los íconos mantengan proporciones */
+}
+
+.footer-social ul li a:hover {
+    color: #00bcd4; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Eliminar cualquier margen o relleno extra del body y el header */
+body, header {
+    margin: 0;
+}
+
+/* Estilos para la sección de Política de Privacidad */
+.privacy-policy {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #ffffff;
+    padding: 80px 10% 40px; /* Aumentamos el padding superior */
+    margin-top: 100px; /* Asegura que no se sobreponga al navbar */
+}
+
+/* Títulos principales */
+.privacy-policy h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Subtítulos */
+.privacy-policy h2 {
+    font-size: 24px;
+    margin-top: 25px;
+    color: #0056b3;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+/* Párrafos */
+.privacy-policy p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Listas */
+.privacy-policy ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.privacy-policy ul li {
+    background: url('https://img.icons8.com/ios-filled/15/007BFF/checkmark.png') no-repeat left center;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Enlaces */
+.privacy-policy a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+/* Destacar información importante */
+.privacy-policy p strong {
+    color: #000;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .privacy-policy {
+        padding: 100px 5% 40px; /* Ajustamos el padding para móviles */
+    }
+
+    .privacy-policy h1 {
+        font-size: 28px;
+    }
+
+    .privacy-policy h2 {
+        font-size: 22px;
+    }
+
+    .privacy-policy p, 
+    .privacy-policy ul li {
+        font-size: 14px;
+    }
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Añade margen izquierdo al logo para separarlo del borde */
+  }
+  
+  

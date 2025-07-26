@@ -1,0 +1,150 @@
+/* Estilo global */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+/* Contenedor del formulario */
+.login-container {
+  background: #ffffff;
+  color: #333;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Título */
+.login-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c5364;
+}
+
+/* Grupos del formulario */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Etiquetas */
+label {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Campos de entrada */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+/* Hover en los campos */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #2c5364;
+  outline: none;
+}
+
+/* Botón de Inicio de Sesión */
+.btn-login {
+  background-color: #2c5364;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+/* Hover en el botón */
+.btn-login:hover {
+  background-color: #0f2027;
+}
+
+/* Enlace para registro */
+.signup-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.signup-link a {
+  color: #2c5364;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Diseño responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+  /* Ajuste del contenedor */
+  .login-container {
+      padding: 20px;
+      max-width: 90%; /* Ancho máximo más pequeño en pantallas pequeñas */
+  }
+
+  /* Título */
+  .login-container h1 {
+      font-size: 1.5rem; /* Reducir tamaño de fuente */
+      margin-bottom: 15px;
+  }
+
+  /* Campos de entrada y botón */
+  input[type="email"],
+  input[type="password"],
+  .btn-login {
+      font-size: 0.9rem; /* Reducir tamaño de texto */
+      padding: 8px;
+  }
+
+  /* Enlace para registro */
+  .signup-link {
+      font-size: 0.8rem; /* Reducir tamaño del texto */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustar el contenedor aún más en pantallas muy pequeñas */
+  .login-container {
+      max-width: 95%; /* Hacerlo más ancho para ajustarse a la pantalla */
+      padding: 15px;
+  }
+
+  /* Reducir aún más el tamaño del texto */
+  .login-container h1 {
+      font-size: 1.2rem;
+  }
+
+  .signup-link {
+      font-size: 0.8rem;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  .btn-login {
+      font-size: 0.9rem;
+  }
+}

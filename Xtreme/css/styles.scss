@@ -1,0 +1,171 @@
+$yellow: #fff000;
+@mixin margenes($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+jumbotron {
+  background: $yellow;
+  @include margenes(50px, 0px);
+}
+address {
+  color: white;
+  font-weight: lighter;
+}
+footer {
+  padding: 10px 10px 0 10px;
+  @include margenes(10px, 0px);
+
+  background: -moz-linear-gradient(
+    left,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(44, 44, 44, 1) 55%,
+    rgba(17, 17, 17, 1) 65%,
+    rgba(43, 43, 43, 1) 70%,
+    rgba(28, 28, 28, 1) 96%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(76, 76, 76, 1)),
+    color-stop(12%, rgba(89, 89, 89, 1)),
+    color-stop(25%, rgba(102, 102, 102, 1)),
+    color-stop(39%, rgba(71, 71, 71, 1)),
+    color-stop(51%, rgba(0, 0, 0, 1)),
+    color-stop(55%, rgba(44, 44, 44, 1)),
+    color-stop(65%, rgba(17, 17, 17, 1)),
+    color-stop(70%, rgba(43, 43, 43, 1)),
+    color-stop(96%, rgba(28, 28, 28, 1)),
+    color-stop(100%, rgba(19, 19, 19, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(44, 44, 44, 1) 55%,
+    rgba(17, 17, 17, 1) 65%,
+    rgba(43, 43, 43, 1) 70%,
+    rgba(28, 28, 28, 1) 96%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(44, 44, 44, 1) 55%,
+    rgba(17, 17, 17, 1) 65%,
+    rgba(43, 43, 43, 1) 70%,
+    rgba(28, 28, 28, 1) 96%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(44, 44, 44, 1) 55%,
+    rgba(17, 17, 17, 1) 65%,
+    rgba(43, 43, 43, 1) 70%,
+    rgba(28, 28, 28, 1) 96%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(76, 76, 76, 1) 0%,
+    rgba(89, 89, 89, 1) 12%,
+    rgba(102, 102, 102, 1) 25%,
+    rgba(71, 71, 71, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(44, 44, 44, 1) 55%,
+    rgba(17, 17, 17, 1) 65%,
+    rgba(43, 43, 43, 1) 70%,
+    rgba(28, 28, 28, 1) 96%,
+    rgba(19, 19, 19, 1) 100%
+  );
+}
+.card-hotel {
+  flex: 1 150px;
+  /*padding: 2px 5px 2px 5px;*/
+  margin-top: 10px;
+}
+.btn {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: bolder;
+  border: 1px solid rgb(124, 117, 117);
+  text-shadow: 1px 1px 2px #464646;
+}
+.btn-reverse {
+  width: 100%;
+  border-radius: 5px;
+  background: -moz-linear-gradient(
+    left,
+    rgba(252, 234, 187, 1) 0%,
+    rgba(252, 205, 77, 1) 54%,
+    rgba(248, 181, 0, 1) 69%,
+    rgba(251, 223, 147, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(252, 234, 187, 1)),
+    color-stop(54%, rgba(252, 205, 77, 1)),
+    color-stop(69%, rgba(248, 181, 0, 1)),
+    color-stop(100%, rgba(251, 223, 147, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(252, 234, 187, 1) 0%,
+    rgba(252, 205, 77, 1) 54%,
+    rgba(248, 181, 0, 1) 69%,
+    rgba(251, 223, 147, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(252, 234, 187, 1) 0%,
+    rgba(252, 205, 77, 1) 54%,
+    rgba(248, 181, 0, 1) 69%,
+    rgba(251, 223, 147, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(252, 234, 187, 1) 0%,
+    rgba(252, 205, 77, 1) 54%,
+    rgba(248, 181, 0, 1) 69%,
+    rgba(251, 223, 147, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(252, 234, 187, 1) 0%,
+    rgba(252, 205, 77, 1) 54%,
+    rgba(248, 181, 0, 1) 69%,
+    rgba(251, 223, 147, 1) 100%
+  );
+}
+.img {
+  border-radius: 30px;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.redesSociales {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.footer-address-icon {
+  padding-right: 10px;
+}
+.tab-content {
+  padding-top: 10px;
+}
